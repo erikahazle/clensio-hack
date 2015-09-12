@@ -1,4 +1,6 @@
 class CustomersController < ApplicationController
+  protect_from_forgery
+
   def show
   end
 
