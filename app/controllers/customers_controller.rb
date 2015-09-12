@@ -9,9 +9,9 @@ class CustomersController < ApplicationController
   def create
     customer = Customer.new params[:customer].permit(:email, :name)
     if customer.save
-      render "Thanks for your details"
+      render 'show'
     else
-      render "Details did not save"
+      render 'new'
     end
   end
 
