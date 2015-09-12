@@ -19,8 +19,4 @@ class CustomersController < ApplicationController
 
   def delete
   end
-
-  def index
-    @customers = Customer.all
-  end
 end
