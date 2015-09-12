@@ -9,7 +9,7 @@ class CustomersController < ApplicationController
   end
 
   def create
-    customer = Customer.new params[:customer].permit(:email, :name)
+    customer = Customer.new({email: params[:email]})
     if customer.save
       render 'show'
     else
