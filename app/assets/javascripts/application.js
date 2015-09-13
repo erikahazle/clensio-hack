@@ -15,10 +15,4 @@
 //= require turbolinks
 //= require_tree .
 
-$(document).ready(function(){
-  // $('#mc-embedded-subscribe-form').on('submit', function(e) {
-  //   e.preventDefault();
-  //   console.log(e);
-  //   debugger;
-  // })
-})
+
